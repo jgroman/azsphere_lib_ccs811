@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_ccs811_example", "lib_ccs811_example\lib_ccs811_example.vcxproj", "{A6DCC647-BB4D-452F-A6C6-45CBC2D4FEE1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_ccs811", "..\lib_ccs811\lib_ccs811.vcxproj", "{5DCEAE9F-78B1-45E2-A27C-796922B9A1EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DCC647-BB4D-452F-A6C6-45CBC2D4FEE1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A6DCC647-BB4D-452F-A6C6-45CBC2D4FEE1}.Debug|ARM.Build.0 = Debug|ARM
+		{A6DCC647-BB4D-452F-A6C6-45CBC2D4FEE1}.Release|ARM.ActiveCfg = Release|ARM
+		{A6DCC647-BB4D-452F-A6C6-45CBC2D4FEE1}.Release|ARM.Build.0 = Release|ARM
+		{5DCEAE9F-78B1-45E2-A27C-796922B9A1EA}.Debug|ARM.ActiveCfg = Debug|ARM
+		{5DCEAE9F-78B1-45E2-A27C-796922B9A1EA}.Debug|ARM.Build.0 = Debug|ARM
+		{5DCEAE9F-78B1-45E2-A27C-796922B9A1EA}.Release|ARM.ActiveCfg = Release|ARM
+		{5DCEAE9F-78B1-45E2-A27C-796922B9A1EA}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A81DBFB1-CC04-49CA-9F13-80DB2F2D4DFC}
+	EndGlobalSection
+EndGlobal

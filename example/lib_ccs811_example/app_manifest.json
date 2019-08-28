@@ -1,0 +1,15 @@
+{
+  "SchemaVersion": 1,
+  "Name" : "lib_ccs811_example",
+  "ComponentId" : "a8cd300b-9d11-47ea-8f74-235d71472cda",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [],
+  "Capabilities": {
+    "AllowedConnections": [],
+    "Gpio": [ "$PROJECT_GPIO2", "$PROJECT_GPIO34", "$PROJECT_GPIO35", "$PROJECT_GPIO16", "$PROJECT_GPIO17" ],
+    "I2cMaster": [ "$PROJECT_ISU2_I2C" ],
+    "Uart": [],
+    "WifiConfig": false
+  },
+  "ApplicationType":"Default"
+}
