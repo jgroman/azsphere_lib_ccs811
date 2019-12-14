@@ -57,6 +57,7 @@
 #include <unistd.h>
 
 #include <applibs/log.h>
+#define I2C_STRUCTS_VERSION 1
 #include <applibs/i2c.h>
 #include <applibs/gpio.h>
 
@@ -228,12 +229,17 @@ ccs811_platform_cb(ccs811_t *p_ccs, uint8_t msg, size_t arg_int,
         break;
 
     case CCS811_MSG_I2C_WRITE_BYTES:
+        // Delay required by Azure Sphere OS 19.11
+        sleepTime.tv_sec = 0;
+        sleepTime.tv_nsec = 800000;
+        nanosleep(&sleepTime, NULL);
+
         // Write arg_int bytes from p_arg_data to I2C address
         result = I2CMaster_Write(i2c_fd, p_ccs->i2c_addr, p_arg_data,
             arg_int);
         if (result == -1)
         {
-            Log_Debug("ERROR: I2CMaster_Write: errno=%d (%s)\n", errno,
+            Log_Debug("LIB CCS811 ERROR: I2CMaster_Write: errno=%d (%s)\n", errno,
                 strerror(errno));
         }
         break;
